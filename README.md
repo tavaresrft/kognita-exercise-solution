@@ -3,7 +3,7 @@
 
 ## Análise dos dados:
 
-A partir da figura contida em ```figures/dataset.png```
+A partir da figura contida em `figures/dataset.png` <https://github.com/tavaresrft/kognita-exercise-solution/blob/main/figures/dataset.png>
 
 podemos concluir verificando a distribuição nessa amostra que, 
 algumas das features possuem  distribuições para cada classe
@@ -13,9 +13,9 @@ do gráfico correspondente à label 1, indicando que dados contidos na região
 dos picos provavelmente serão referentes à label 0.
 
 Ao verificar a correlação entre os dados entre a coluna default e as outras colunas
-na figura `figures/total_corr.png`, vemos que há uma baixa correlação entre essas colunas
-e mesmo fazendo somente para o caso default = 0 `figures/default_0_corr.png`
-e para o caso default = 1, `figures/default_1_corr.png` a correlação continua baixa (para
+na figura `figures/total_corr.png` <https://github.com/tavaresrft/kognita-exercise-solution/blob/main/figures/total_corr.png>, vemos que há uma baixa correlação entre essas colunas
+e mesmo fazendo somente para o caso default = 0 `figures/default_0_corr.png` <https://github.com/tavaresrft/kognita-exercise-solution/blob/main/figures/figures/default_0_corr.png>
+e para o caso default = 1, `figures/default_1_corr.png` <https://github.com/tavaresrft/kognita-exercise-solution/blob/main/figures/figures/default_1_corr.png> a correlação continua baixa (para
 default = 1 os dados são um pouco mais correlacionados, porém ainda é pouco).
 
 Tentei usar essa diferença entre as correlações para filtrar as features do modelo, porém os resultados
@@ -39,11 +39,12 @@ Para treinar o modelo usei uma regressão logística e obtive as métricas:
 `precision =  0.7334170854271357`
 `recall =  0.6093945720250522`
 e a matriz de correlação:
-|---------|---------|
-|  2906   |  1027   |
-|-------------------|
-|  1881   |  2004   |
-|---------|---------|
+
+|       |       |            
+|:-----:|:-----:|
+|  2906   |  1027 |
+|  1881   |  2004 |   
+
 
 O modelo é salvo no arquivo `saved_model/classifier.joblib` e a transformação de
 escalonamento é salva no arquivo `saved_model/classifier.joblib`
@@ -54,7 +55,8 @@ escalonamento é salva no arquivo `saved_model/classifier.joblib`
 Para realizar a predição o notebook espera um arquivo com uma lista de dicionários.
 Ao receber os dicionários os dados são salvos em um dataset pandas, e após
 é aplicada a mesma transformação nos dados como no treino e a predição é feita.
-Os resultados são salvos em um arquivo a ser definido no notebook
+Os resultados são salvos em um arquivo, como por exemplo o arquivo `predicted.json`
+<https://github.com/tavaresrft/kognita-exercise-solution/blob/main/predicted.json>
 
 
 ## Makefile
