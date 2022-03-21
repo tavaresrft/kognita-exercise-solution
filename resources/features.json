@@ -1,0 +1,16 @@
+[
+    {
+    "default_3months":0,
+    "dividas_vencidas_qtd":0,
+    "dividas_vencidas_valor":0.0,
+    "acao_judicial_valor":0.0,
+    "month":5
+    },
+    {
+    "default_3months":5,
+    "dividas_vencidas_qtd":2,
+    "dividas_vencidas_valor":125.0,
+    "acao_judicial_valor":0.0,
+    "month":7
+    }
+]
